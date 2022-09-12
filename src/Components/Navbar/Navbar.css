@@ -21,17 +21,16 @@ nav {
 
 .search-bar {
     height: 2em;
-    width: 30em;
+    width: 30vw;
     background-color: white;
     border-radius: 5px;
 }
 
-.logo {
-    color: red;
-}
+
 
 .logo-name {
     color: white;
+    white-space: nowrap
 }
 
 .icon {

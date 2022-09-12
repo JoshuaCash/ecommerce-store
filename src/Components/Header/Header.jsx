@@ -13,22 +13,29 @@ import slide3 from '../../assets/smart-watch.jpg';
 
 function Header() {
     return (
-     <div className={styles.container}>
+     <div className='container'>
         <Swiper
             modules={[Navigation, EffectFade]}
             navigation
             effect
-            speed={800}
+            speed={900}
             slidesPerView={1}
             loop
-            className={styles.myswiper}
+            className='carousel'
             >
-            <SwiperSlide>
-                <img src="{slide1}" />
+            <SwiperSlide className='slides' >
+                <img src={slide1} className='images' />
+            </SwiperSlide>
+            <SwiperSlide className='slides'>
+                <img src={slide2} className='images' />
+            </SwiperSlide>
+            <SwiperSlide className='slides'>
+                <img src={slide3} className='images' />
             </SwiperSlide>
 
             </Swiper>
      </div>
+   
     )
 }
 
